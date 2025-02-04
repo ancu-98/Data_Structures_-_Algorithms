@@ -32,24 +32,25 @@ Sí n = 5
 ¿n es mayor que 2?
 ------> 5 < 2 --> True
 
-Iteramos desde i = 2
+Iteramos desde i = 2, i < 5? -> True, i++ -> i + 1
+    n % i == 0
+    5÷2=2(cociente entero),residuo =5−(2×2)=1
+    5 % 2 == 1
+    return false
 
-n % i == 0
-5÷2=2(cociente entero),residuo =5−(2×2)=1
-5 % 2 == 1
-return false
+    -------------> i = 3, i < 5? -> True, i++ -> i + 1
+    n % i == 0
+    5÷3=1(cociente entero),residuo =5−(3×1)=2
+    5 % 3 == 2
+    return false
 
--------------> i = 3
-n % i == 0
-5÷3=1(cociente entero),residuo =5−(3×1)=2
-5 % 3 == 2
-return false
-
--------------> i = 4
-n % i == 0
-5÷4=1(cociente entero),residuo =5−(4×1)=1
-5 % 4 == 1
-return false
+    -------------> i = 4, i < 5? -> True, i++ -> i + 1
+    n % i == 0
+    5÷4=1(cociente entero),residuo =5−(4×1)=1
+    5 % 4 == 1
+    return false
+    -------------> i = 5, i < 5? -> False
+Hasta que i < 5 --------> (i sea menor que 5)
 
 Como ningún número menor que 'n'(5) es divisible sin dejar un resto
 El Número es Primo
@@ -92,17 +93,19 @@ Sí n = 5
 ¿n es mayor que 2?
 ------> 5 < 2 --> True
 
-Iteramos desde i = 2, hasta: Math.sqrt(5) = 2.23606797749979 = 2.24
-2 es menor o igual que 2.24? = True
+---------------------Math.sqrt(5) = 2.23606797749979 = 2.24
+Iteramos desde i = 2, i <= 2.24? -> True                   ,i++ -> i + 1
+    2 es menor o igual que 2.24? = True
 
-n % i == 0
-5÷2=2(cociente entero),residuo =5−(2×2)=1
-5 % 2 == 1
-return false
+    n % i == 0
+    5÷2=2(cociente entero),residuo =5−(2×2)=1
+    5 % 2 == 1
+    return false
 
--------------> i = 3
-3 es menor o igual que 2.24 = False
-Salimos del bucle
+    -------------> i = 3 i <= 2.24? -> False
+    3 es menor o igual que 2.24 = False
+
+Hasta que i <= 2.24 --------> (i sea menor o igual que 2.24)
 
 Como ningún número menor que 'n'(5) es divisible sin dejar un resto
 El Número es Primo

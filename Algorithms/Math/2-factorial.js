@@ -4,7 +4,7 @@
 // es el producto de todos los enteros positivos menores o iguales que n
 
 function factorial(n) {
-    // Sabemos que el facorial de 0 y 1 es = 1
+    // Sabemos que el factorial de 0 y 1 es = 1
     let result = 1
     // si n es mayor que 1 tenemos que encontrar el producto de todos los números menores o iguales a n
     // para ello usamos un bucle for que empieza en 2 ya que multiplicar por 1 no tiene efecto
@@ -19,23 +19,27 @@ function factorial(n) {
 /*
 Sí n = 5
 
-Iteramos desde i = 2
+result = 1
 
-result = result * i
-result = 1 * 2 = 2
+Iteramos desde i = 2, i <= 5? -> True, i++ -> i + 1
+    result = result * i
+    result = 1 * 2 = 2
 
--------------> i = 3
-result = result * i
-result = 2 * 3 = 6
+    -------------> i = 3, i <= 5? -> True, i++ -> i + 1
+    result = result * i
+    result = 2 * 3 = 6
 
--------------> i = 4
-result = result * i
-result = 6 * 4 = 24
+    -------------> i = 4, i <= 5? -> True, i++ -> i + 1
+    result = result * i
+    result = 6 * 4 = 24
 
--------------> i = 5
-result = result * i
-result = 24 * 5 = 120
+    -------------> i = 5, i <= 5? -> True, i++ -> i + 1
+    result = result * i
+    result = 24 * 5 = 120
 
+Hasta que i <= 5 --------> (i sea menor o igual que 5)
+
+return result = 120
 */
 
 console.log(factorial(0)) // 1

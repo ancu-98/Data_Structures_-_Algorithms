@@ -37,14 +37,15 @@ Sí n = 5
 
 5 es menor que 1? = false
 
-Mientras n(5) sea mayor que 1
-Se ejecuta el bucle
+    Mientras n(5) sea mayor que 1
+    Se ejecuta el bucle
 
-El resto/residuo al dividir n entre 2 (5/2) es diferente de 0? = True
-n % 2 !== 0
-5÷2=2(cociente entero),residuo =5−(2×2)= 5-(4)=1
-5 % 2 == 1
-Como el resto/residuo al dividir n entre 2 (5/2) es diferente de 0
+    El resto/residuo al dividir n entre 2 (5/2) es diferente de 0? = True
+    n % 2 !== 0
+    5÷2=2(cociente entero),residuo =5−(2×2)= 5-(4)=1
+    5 % 2 == 1
+    Como el resto/residuo al dividir n entre 2 (5/2) es diferente de 0
+
 devolvemos false
 
 Lo que significa que 5 no es una potencia de 2
@@ -56,60 +57,59 @@ Sí n = 8
 8 es menor que 1? = false
 
 Mientras n(8) sea mayor que 1
-Se ejecuta el bucle
+    Se ejecuta el bucle
 
-El resto/residuo al dividir n entre 2 (8/2) es diferente de 0? = False
-n % 2 !== 0
-8÷2=4(cociente entero),residuo =8−(2×4)= 8-(8)= 0
-8 % 2 == 0
-Como el resto/residuo al dividir n entre 2 (8/2) es igual a 0
-salimos del if, la condicion no se cumple
+    El resto/residuo al dividir n entre 2 (8/2) es diferente de 0? = False
+    n % 2 !== 0
+    8÷2=4(cociente entero),residuo =8−(2×4)= 8-(8)= 0
+    8 % 2 == 0
+    Como el resto/residuo al dividir n entre 2 (8/2) es igual a 0
+    salimos del if, la condicion no se cumple
 
-Actualizamos el valor de n
-n = n/2
-n = 8/2 = 4
+    Actualizamos el valor de n
+    n = n/2
+    n = 8/2 = 4
 
-Se vuelve a ejecutar el bucle while
+    Se vuelve a ejecutar el bucle while
 
-----------------> n = 2
-Mientras n(4) sea mayor que 1
-Se ejecuta el bucle
+    ----------------> n = 4
+    Mientras n(4) sea mayor que 1
+    Se ejecuta el bucle
 
-El resto/residuo al dividir n entre 2 (4/2) es diferente de 0? = False
-n % 2 !== 0
-4÷2=2(cociente entero),residuo =4−(2×2)= 4-(4)= 0
-4 % 2 == 0
-Como el resto/residuo al dividir n entre 2 (4/2) es igual a 0
-salimos del if, la condicion no se cumple
+    El resto/residuo al dividir n entre 2 (4/2) es diferente de 0? = False
+    n % 2 !== 0
+    4÷2=2(cociente entero),residuo =4−(2×2)= 4-(4)= 0
+    4 % 2 == 0
+    Como el resto/residuo al dividir n entre 2 (4/2) es igual a 0
+    salimos del if, la condicion no se cumple
 
-Actualizamos el valor de n
-n = n/2
-n = 4/2 = 2
+    Actualizamos el valor de n
+    n = n/2
+    n = 4/2 = 2
 
-Se vuelve a ejecutar el bucle while
+    Se vuelve a ejecutar el bucle while
 
-----------------> n = 2
-Mientras n(2) sea mayor que 1
-Se ejecuta el bucle
+    ----------------> n = 2
+    Mientras n(2) sea mayor que 1
+    Se ejecuta el bucle
 
-El resto/residuo al dividir n entre 2 (2/2) es diferente de 0? = False
-n % 2 !== 0
-2÷2=1(cociente entero),residuo =2−(1×2)= 2-(2)= 0
-2 % 2 == 0
-Como el resto/residuo al dividir n entre 2 (2/2) es igual a 0
-salimos del if, la condicion no se cumple
+    El resto/residuo al dividir n entre 2 (2/2) es diferente de 0? = False
+    n % 2 !== 0
+    2÷2=1(cociente entero),residuo =2−(1×2)= 2-(2)= 0
+    2 % 2 == 0
+    Como el resto/residuo al dividir n entre 2 (2/2) es igual a 0
+    salimos del if, la condicion no se cumple
 
-Actualizamos el valor de n
-n = n/2
-n = 2/2 = 1
+    Actualizamos el valor de n
+    n = n/2
+    n = 2/2 = 1
 
-Se vuelve a ejecutar el bucle while
+    Se vuelve a ejecutar el bucle while
 
-----------------> n = 1
-Mientras n(1) sea mayor que 1
-1 no es mayor 1, es igual
+    ----------------> n = 1
+    Mientras n(1) sea mayor que 1 -> 1 no es mayor 1, es igual
 
-Se sale del bucle while
+Salimos del bucle while
 
 Devolvemos True
 
@@ -146,7 +146,7 @@ function isPowerOfTwoBitWise(n) {
 Sí n = 1
 - n = 1, binario: 0001
     (1 & (1-1) == 0)
-    posición:       0123    0123
+    posición:       0123   0123
     (1 & 0 == 0)   (0001 & 0000 = 0000)
     - posición del bit 0: 0
     - posición del bit 1: 0
@@ -158,7 +158,7 @@ Sí n = 1
 Sí n = 2
 - n = 2, binario: 0010
     (2 & (2-1) == 0)
-    posición:      0123    0123
+    posición:      0123   0123
     (2 & 1 == 0)  (0010 & 0001 == 0000)
     - posición del bit 0: 0
     - posición del bit 1: 0
@@ -170,7 +170,7 @@ Sí n = 2
 Sí n = 3
 - n = 3, binario: 0011
     (3 & (3-1) == 0)
-    posición:      0123    0123
+    posición:      0123   0123
     (3 & 2 == 0)  (0011 & 0010 == 0000)
     - posición del bit 0: 0
     - posición del bit 1: 0

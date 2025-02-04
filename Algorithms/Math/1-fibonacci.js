@@ -22,21 +22,32 @@ Sí n = 4, index:i 0 1
 array ---------> [0,1]
 fib[0] = 0
 fib[1] = 1
-Iteramos desde i = 2
-fib[2] = fib[2-1] + fib[2-2]
-       = fib[1]   + fib[0]
-       = 1        + 0       = 1
-array ---------> [0,1,1]
-fib[3] = fib[3-1] + fib[3-2]
-       = fib[2]   + fib[1]
-       = 1        + 1       = 2
-array ---------> [0,1,1,2]
-n = 4 --------->  0,1,2,3
+
+Iteramos desde i = 2, i < 4? -> True, i++ -> i + 1
+    fib[2] = fib[2-1] + fib[2-2]
+        = fib[1]   + fib[0]
+        = 1        + 0       = 1
+    fib[2] = 1
+    i ------------->  0 1 2
+    array ---------> [0,1,1]
+
+    -------------> i = 3, i < 4? -> True, i++ -> i + 1
+    fib[3] = fib[3-1] + fib[3-2]
+        = fib[2]   + fib[1]
+        = 1        + 1       = 2
+    fib[3] = 2
+    i ------------->  0 1 2 3
+    array ---------> [0,1,1,2]
+
+    -------------> i = 4, i < 4? -> False
+Hasta que i < 4 --------> (i sea menor que 4)
+
+return fib = [0,1,2,3]
 */
 
-console.log(fibonacci(2))
-console.log(fibonacci(3))
-console.log(fibonacci(4)) // [0,1,1,2]
-console.log(fibonacci(7))
+console.log(fibonacci(2)) //[0,1]
+console.log(fibonacci(3)) //[0,1,1]
+console.log(fibonacci(4)) //[0,1,1,2]
+console.log(fibonacci(7)) //[0,1,1,2,3,5,8]
 
 //Big-O = O(n)
