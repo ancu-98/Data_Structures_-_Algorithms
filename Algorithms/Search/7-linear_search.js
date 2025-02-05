@@ -19,7 +19,7 @@ De igual forma:
 function linearSearch(arr, target){
     //arr -> representa el arreglo en donde deseamos buscar
     //target -> representa el elemento que debemos encontrar
-    for(let i = 0; i < arr.length(); i++){
+    for(let i = 0; i < arr.length; i++){
         // Sí algun elemento del arreglo es igual al elemento objetivo
         if (arr[i] === target) {
             return i
