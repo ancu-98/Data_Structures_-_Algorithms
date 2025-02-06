@@ -64,7 +64,7 @@ function binarySearch(arr, target){
 
 /*
            0  1  2  3  4
-Sí arr = [-5, 2, 4, 6, 10] y target = 10)
+Sí arr = [-5, 2, 4, 6, 10] y target = 10
 
 leftIndex = 0
 rigthIndex = arr.length - 1
@@ -83,7 +83,9 @@ Mientras (leftIndex <= rigthIndex)
     middleIndex = Math.floor(2)
     middleIndex = 2
 
-    middleIndex --------> *
+    rigthIndex ---------------> *
+    leftIndex ----> *           |
+    middleIndex ----|---> *     |
                     0  1  2  3  4
             arr = [-5, 2, 4, 6, 10]
 
@@ -105,11 +107,6 @@ Mientras (leftIndex <= rigthIndex)
         leftIndex = 3
         ahora buscamos en la mitad derecha del arreglo
 
-    leftIndex -------------> *
-    middleIndex --------> *
-                    0  1  2  3  4
-            arr = [-5, 2, 4, 6, 10]
-
     -------------> iteracion 2
     (leftIndex <= rigthIndex)?
     (3 <= 4 )? El indice izquierdo(3), es menor o igual al indice derecho(4)?
@@ -122,8 +119,9 @@ Mientras (leftIndex <= rigthIndex)
     middleIndex = Math.floor(3.5)
     middleIndex = 3
 
-    leftIndex -------------> *
-    middleIndex -----------> *
+    rigthIndex ---------------> *
+    leftIndex -------------> *  |
+    middleIndex -----------> *  |
                     0  1  2  3  4
             arr = [-5, 2, 4, 6, 10]
 
@@ -144,11 +142,6 @@ Mientras (leftIndex <= rigthIndex)
         leftIndex = 3 + 1
         leftIndex = 4
 
-    leftIndex ----------------> *
-    middleIndex -----------> *
-                    0  1  2  3  4
-            arr = [-5, 2, 4, 6, 10]
-
     -------------> iteracion 3
     (leftIndex <= rigthIndex)?
     (4 <= 4 )? El indice izquierdo(4), es menor o igual al indice derecho(4)?
@@ -162,6 +155,7 @@ Mientras (leftIndex <= rigthIndex)
     middleIndex = 4
 
     leftIndex ----------------> *
+    leftIndex ----------------> *
     middleIndex --------------> *
                     0  1  2  3  4
             arr = [-5, 2, 4, 6, 10]
@@ -174,6 +168,8 @@ Mientras (leftIndex <= rigthIndex)
     devolvemos el indice del elemento del medio
     return middleIndex = 4
 */
+
+//Big-O = O(logn)
 
 console.log(binarySearch([-5, 2, 4, 6, 10], 10)) //4
 console.log(binarySearch([-5, 2, 4, 6, 10], 6))  //3
