@@ -23,14 +23,14 @@ PSEUDCODIGO
 
 function bubbleSort(arr) {
     // arr -> representa el arreglo a ordenar
-    //
+    // Creamos variable para verificar si hay elementos intercambiados
     let slopped
     do {
         // Recorremos el arreglo al menos una vez
         slopped = false
         for(let i = 0; i < arr.length - 1; i++){
             // Dentro del cuerpo comparamos el elemento con el elemento adyacente
-            if (arr[i] > arr[i +1]){
+            if (arr[i] > arr[i + 1]){
                 // Y los intercambiamos si están fuera de orden
                 // Usando una variable temporal
                 let temp = arr[i]
@@ -47,7 +47,27 @@ function bubbleSort(arr) {
 }
 
 /*
-Sí arr = []
+Sí arr = [5, 2, 9, 1, 5, 6]
+
+slopped = false
+
+Iteramos al menos un vez
+
+-------------> iteracion 1
+for(let i = 0; i < arr.length - 1; i++)
+               i < 6 - 1
+
+El primer elemento es mayor que el elemento adyacente?
+if (arr[i] > arr[i + 1])
+if (arr[0] > arr[0 + 1])
+if (arr[0] > arr[1])
+if (5 > 2) -> True
+
+
+
+
+
+
 
 */
 
