@@ -51,7 +51,7 @@ function insertionSort(arr){
         // o donde el número actual es menor que el número a insertar
         // Por lo tanto, insertamos el número a insertar en su posición correcta:
         arr[j+1] = numberToInsert // Insertamos el número a insertar a la derecha del número actual
-        //Volvemos a comparar el número a insertar con la parte ordenada del array
+        //Volvemos a seleccionar el siguiente elemento desordenado
     }
 }
 
@@ -75,12 +75,11 @@ numberToInsert = 2
 
 j = i - 1
 j = 1 - 1
-j = 0  --> Indica el elemento ordenado
+j = 0  --> Indica el indice del elemento ordenado
 
 indice:          0  1  2  3  4
 arr-ordenado -> [5| 2, 9, 1, 6]   <- arr-desordenado
 NTI = 2   , SE = 5
-
 
     -------------> iteracion 1 - Bucle while
     Mientras j sea mayor o igual que 0 y arr[j] (sorted element) sea mayor que el número a insertar
@@ -97,7 +96,7 @@ NTI = 2   , SE = 5
     Decrementamos j en cada iteración
     j = j-1
     j = 0-1
-    j = -1 --> Indica el elemento ordenado
+    j = -1 --> Indica el indice del elemento ordenado
 
     indice:          0  1  2  3  4
     arr-ordenado -> [5| 5, 9, 1, 6]   <- arr-desordenado
@@ -130,7 +129,7 @@ numberToInsert = 9
 
 j = i - 1
 j = 2 - 1
-j = 1 --> Indica el elemento ordenado
+j = 1 --> Indica el indice del elemento ordenado
 
 indice:          0  1  2  3  4
 arr-ordenado -> [2  5| 9, 1, 6]   <- arr-desordenado
@@ -163,12 +162,11 @@ numberToInsert = 1
 
 j = i - 1
 j = 3 - 1
-j = 2 --> Indica el elemento ordenado
+j = 2 --> Indica el indice del elemento ordenado
 
 indice:          0  1  2  3  4
 arr-ordenado -> [2  5  9| 1, 6]   <- arr-desordenado
     NTI = 1   , SE = 9
-
 
     -------------> iteracion 4 - Bucle while
     Mientras j sea mayor o igual que 0 y arr[j] (sorted element) sea mayor que el número a insertar
@@ -185,7 +183,7 @@ arr-ordenado -> [2  5  9| 1, 6]   <- arr-desordenado
     Decrementamos j en cada iteración
     j = j-1
     j = 2-1
-    j = 1 --> Indica el elemento ordenado
+    j = 1 --> Indica el indice del elemento ordenado
 
     indice:          0  1  2  3  4
     arr-ordenado -> [2  5  9| 9, 6]   <- arr-desordenado
@@ -206,7 +204,7 @@ arr-ordenado -> [2  5  9| 1, 6]   <- arr-desordenado
     Decrementamos j en cada iteración
     j = j-1
     j = 1-1
-    j = 0 --> Indica el elemento ordenado
+    j = 0 --> Indica el indice del elemento ordenado
 
     indice:          0  1  2  3  4
     arr-ordenado -> [2  5  5| 9, 6]   <- arr-desordenado
@@ -227,7 +225,7 @@ arr-ordenado -> [2  5  9| 1, 6]   <- arr-desordenado
     Decrementamos j en cada iteración
     j = j-1
     j = 0-1
-    j = -1 --> Indica el elemento ordenado
+    j = -1 --> Indica el indice del elemento ordenado
 
     indice:          0  1  2  3  4
     arr-ordenado -> [2  2  5| 9, 6]   <- arr-desordenado
@@ -260,7 +258,7 @@ numberToInsert = 6
 
 j = i - 1
 j = 4 - 1
-j = 3 --> Indica el elemento ordenado
+j = 3 --> Indica el indice del elemento ordenado
 
 indice:          0  1  2  3  4
 arr-ordenado -> [1  2  5  9| 6]   <- arr-desordenado
@@ -281,7 +279,7 @@ arr-ordenado -> [1  2  5  9| 6]   <- arr-desordenado
     Decrementamos j en cada iteración
     j = j-1
     j = 3-1
-    j = 2 --> Indica el elemento ordenado
+    j = 2 --> Indica el indice del elemento ordenado
 
     indice:          0  1  2  3  4
     arr-ordenado -> [1  2  5  9| 9]   <- arr-desordenado
